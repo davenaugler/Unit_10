@@ -26,8 +26,35 @@ public class OptionalApplication {
 //		System.out.println(brownies);
 		
 		// Lesson 3
-		brownies.setPriceOpt((new BigDecimal(9.99)));
-		System.out.println(brownies);
+//		brownies.setPriceOpt((new BigDecimal(9.99)));
+//		System.out.println(brownies);
+//		System.out.println(brownies.getPriceOpt().get());
+		
+		
+		// Not a great way of handling it
+//		if (brownies.getPriceOpt().isPresent()) {
+//			BigDecimal price = brownies.getPriceOpt().get();
+//			System.out.println(price);
+//		} else {
+//			System.out.println("Price is not present");
+//		}
+		
+		// Returns "No value present" without a value
+		// With value you get the value returned in a long number format
+//		if (brownies.getPriceOpt() != null) {
+//			System.out.println(brownies.getPriceOpt().get());
+//		} else {
+//			System.out.println("Price is not availablE yet");
+//		}
+		
+		// No errors 
+		// Will return what you give it inside the .orElse
+		BigDecimal browniePrice = brownies.getPriceOpt()
+			    				   .map(p -> p)
+			    				   .orElse(new BigDecimal(0));
+		System.out.println(browniePrice);
+		
+		
 
 	}
 

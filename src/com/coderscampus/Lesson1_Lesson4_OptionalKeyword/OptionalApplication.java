@@ -1,4 +1,4 @@
-package com.coderscampus.lesson1_OptionalKeyword;
+package com.coderscampus.Lesson1_Lesson4_OptionalKeyword;
 
 import java.math.BigDecimal;
 import java.util.Optional;
@@ -53,6 +53,11 @@ public class OptionalApplication {
 			    				   .map(p -> p)
 			    				   .orElse(new BigDecimal(0));
 		System.out.println(browniePrice);
+		
+		// Lesson 4
+		brownies.setPriceOpt(new BigDecimal(10.00));
+		brownies.getPriceOpt()
+				.ifPresent(RecipeService::billClient);
 		
 		
 

@@ -1,4 +1,4 @@
-package com.coderscampus.Lesson5_Enums;
+package com.coderscampus.Lesson5__Enums;
 
 public class EnumApplication {
 

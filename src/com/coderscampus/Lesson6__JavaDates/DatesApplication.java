@@ -1,4 +1,5 @@
-package com.coderscampus.Lesson6;
+// The old way of using Dates in Java
+package com.coderscampus.Lesson6__JavaDates;
 
 import java.util.Date;
 
@@ -21,4 +22,3 @@ public class DatesApplication {
 	}
 
 }
-d

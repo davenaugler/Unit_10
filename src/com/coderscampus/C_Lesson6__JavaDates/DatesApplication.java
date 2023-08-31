@@ -1,5 +1,5 @@
 // The old way of using Dates in Java
-package com.coderscampus.Lesson6__JavaDates;
+package com.coderscampus.C_Lesson6__JavaDates;
 
 import java.util.Date;
 

@@ -1,6 +1,6 @@
 // The old way of using Dates in Java
 
-package com.coderscampus.Lesson8__FormattingDates;
+package com.coderscampus.E_Lesson8__FormattingDates;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -13,7 +13,7 @@ public class FormatAndParsingDates {
 	public static void main(String[] args) {
 		Calendar cal = Calendar.getInstance();
 		// .set(int year, int month, int date, int hourOfDay, int minute, int second)
-		// Month is zero based
+		// Month is a zero based index
 //		cal.set(2023, 8, 15, 13, 23, 0);
 		cal.set(2023, 8, 15);
 		Date sept2023 = cal.getTime();

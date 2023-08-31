@@ -1,4 +1,4 @@
-package com.coderscampus.Lesson5__Enums;
+package com.coderscampus.B_Lesson5__Enums;
 
 public enum Card {
 	

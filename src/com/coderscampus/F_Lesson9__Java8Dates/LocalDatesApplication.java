@@ -1,5 +1,5 @@
 // The new way of using Dates in Java
-package com.coderscampus.Lesson9__Java8Dates;
+package com.coderscampus.F_Lesson9__Java8Dates;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -14,6 +14,11 @@ public class LocalDatesApplication {
 		LocalDate date = LocalDate.now();
 		LocalTime time = LocalTime.now();
 		LocalDateTime dateTime = LocalDateTime.now();
+		System.out.println("");
+		// Anther way to do what we did on line 16. Utilizing the variables date (line 14) and time (line 15)
+//		LocalDateTime dateTime = LocalDateTime.of(date, time);
+		System.out.println(dateTime);
+		System.out.println("");
 		ZonedDateTime zonedDateTime = ZonedDateTime.now();
 		
 		System.out.println(date + " " + time); // 2023-08-28 12:11:41.379976
